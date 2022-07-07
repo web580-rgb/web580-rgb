@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的内卷之路-JavaScript桌面应用</title>
+    <!-- <link rel="stylesheet" href="css/demo.css"> -->
+</head>
+<style>
+    body { 
+   
+   /* 去除body自带8px外边距 */
+   margin: 0;
+   /* 限制页面左右滑动 */
+   overflow-x: hidden;
+   /* 添加背景 */
+   background-size: auto;
+}
+
+.页招 {
+   width: 1600px;
+   height: 170px;
+   background-color: aquamarine;
+}
+
+.顶导航 {
+   margin: 2px 113px;
+   width: 200px;
+   height: 200px;
+}
+
+.声明 {
+   margin: -191px 499px;
+}
+
+.内容样式 {
+   width: 1583px;
+   /* 居中样式 */
+   text-align: center;
+}
+
+.配图 {
+   width: 1000px;
+   height: 429px;
+}
+
+</style>
+<body background="img/bj.png">
+    <!-- 网页顶部 -->
+    <div class="页招">
+        <!-- 导航栏 -->
+        <div class="顶导航">
+            <br>
+            <br>
+            <a href="">返回首页</a>
+            <br>
+            <a href="">css</a>
+            <br>
+            <a href="">选择器取名规范</a>
+            <br>
+            <a href="">排列/移动/浮动</a>
+        </div>
+        <!-- 声明 -->
+        <div class="声明">
+            <h2> 我是一个前端爱好者，这里强烈声明本网站只用于学习使用没有任何商业用途 ( •̀ ω •́ ) </h2>
+            <h3>个人QQ:2777368400欢迎各位前端大佬指点(*^_^*)</h3>
+        </div>
+    </div>
+    <div class="内容样式">
+        <!-- css -->
+        <div class="超链接和锚链接">
+            <h1 class="标题">超链接和锚链接</h1>
+            <!-- 本网页上跳转 -->
+            <p class="con-1" id="p1">超链接是指可以让网页实现跳转点击这个链接可以在本网页的跳转<a class="lian"
+                    href="http://www.baidu.com/">点击跳转到百度</a> </p>
+            <!--新建网页上跳转-->
+            <p class="con-1">超链接是指可以让网页实现跳转点击这个链接可以新建网页进行跳转<a class="lian" href="http://www.baidu.com/"
+                    target="_blank">点击跳转到百度</a></p>
+            <img class="配图" src="img/1.png" alt="图一">
+            <img class="配图" src="img/2.png" alt="图二">
+        </div>
+        <br>
+        <hr>
+        <!-- 锚链接 -->
+        <h1>锚链接</h1>
+        <p>锚链接可以理解为是一种导航也是一种链接让网页进行跳转,制作锚链接一般有两步，第一步为标签添加ID样式如图所示:
+            <img class="配图" src="img/3.png" alt="配图三">
+        </p>
+        <p>第二步在href=" "这里在#号后添加ID的名字（比如说#p1）如图所示：</p>
+        <img class="配图" src="img/4.png" alt="配图四">
+        <!-- 换行 -->
+        <br>
+        <!-- 横线 -->
+        <hr>
+        <!-- css样式 -->
+        <div class="css样式">
+            <h1 id="css">css样式</h1>
+            <p>background-image: url();(添加背景图片)</p>
+            <p>align="center"(文字居中)</p>
+            <p>text-align:center ; 文字居中*/</p>
+            <p>font-size:1px;/*文字大小*/</p>
+            <p>float：left； /*浮动*/</p>
+        </div>
+
+        <!-- 选择器取名 -->
+        <br>
+        <!-- 横线 -->
+        <hr>
+        <div class="选择器取名">
+            <h3 id="sel">选择器取名规范(不常样用的有括号颜色为【绿色】)</h3>
+            <p>头:hedader</p>
+            <p>内容: content/container</p>
+            <p>尾：footer</p>
+            <p>导航：nav</p>
+            <p>侧边栏：sidebar</p>
+            <p>栏目：column</p>
+            <p>页面外围控制整体布局宽度：wrapper</p>
+            <p>左、 右 、中：left、right、center</p>
+            <p class="p1">(登录条：loginbar)</p>
+            <p>标志：logo</p>
+            <p>广告：banner</p>
+            <p>页面主体：main</p>
+            <p>热点：hot</p>
+            <p>新闻：news</p>
+            <p>下载：download</p>
+            <p>子导航：subnav</p>
+            <p>搜索：search</p>
+            <p>友情链接：friendlink</p>
+            <p>页脚：footer</p>
+            <p>版权：copyright</p>
+            <p>滚动：scroll</p>
+            <p>内容：content </p>
+            <p>标签：tags</p>
+            <p>文章列表：list</p>
+            <p>提示信息：msg</p>
+            <p>小技巧：tips</p>
+            <p>栏目标题：title</p>
+            <p>加入：joinus</p>
+            <p>指南：guide</p>
+            <p>服务：service</p>
+            <p>注册:regsiter</p>
+        </div>
+        <!-- 横线 -->
+        <hr>
+        <!-- 排列、位移、浮动: -->
+        <div class="排列、位移、浮动">
+            <h3 id="float">排列、位移、浮动:</h3>
+            <p class="p2">向右排列：dislpay: inline-block 可以是文字（图片）向右排列</p>
+            <p class="p2">位移：transform: translateY(201px) translateX(201px) 【Y(上下)、X（左右）X轴位移】</p>
+        </div>
+        <!-- JavaScript模块 -->
+        <div>
+            <h1>JavaScript代码模块</h1>
+            <h3>1.注释篇(该快捷键仅在vscode中见效！)</h3>
+            <p>单行注释：//这是单行注释 快捷键：CTRL+/（在要备注是的代码前面添加两个反斜杠：//单行注释标签）</p>
+            <p>多行注释注释：/**/这是单行注释 快捷键：CTRL+Shift+A（在要备注是的代码前面添加/*多行注释标签*/）</p>
+        </div>
+        <!-- 个人qq  -->
+        <p>个人QQ号:2777368400如果代码有什么错误的地方还欢迎大家来指正错误呀</p>
+        <h3>个人QQ号:2777368400如果代码有什么错误的地方还欢迎大家来指正错误呀</h3>
+    </div>
+
+
+
+
+</body>
+
+</html>
